@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+<form method="POST" action="/login">
+    {{ form.csrf_token }}
+    {% if form.errors %}
+    <span class="error help-inline">{{ form.errors|join(', ') }}</span>
+{% endif %}
+    {{ form.email.label }} {{ form.email(size=20) }}
+    {{ form.password.label }} {{ form.password(size=20) }}
+    <input type="submit" value="Go">
+</form>
+{% endblock %}

@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+{% block header %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="home_text wow fadeInUp animated">
+          <h3>这所美丽的校园里,萝莉 御姐...遍布,曾经在这里采花无数的男人——诺思·丹森勾</h3>
+          <h3>毕业前所说的话让众单身狗们义愤填膺得奔向这片"花"海</h3>
+          <h3>"此处省略1000字……"</h3>
+          <p>避免对单身狗们造成暴击伤害</p>
+          <img src="{{ url_for('static', filename='images/shape.png') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="scroll_down">
+          <a href="#SERVICE"><img src="{{ url_for('static', filename='images/scroll.png') }}" alt=""></a>
+          <h4>Scroll Down</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block body %}
+  <section class="services" id="SERVICE">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="single_service wow fadeInUp" data-wow-delay="1s">
+                        <i class="icon-pencil"></i>
+                        <h2>采花榜</h2>
+                        <p>成功追到女孩子最多的人</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="single_service wow fadeInUp" data-wow-delay="2s">
+                        <i class="icon-gears"></i>
+                        <h2>花心榜</h2>
+                        <p>追求女孩数+对女孩心动数最多的人</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="single_service wow fadeInUp" data-wow-delay="3s">
+                        <i class="icon-camera"></i>
+                        <h2>注孤榜</h2>
+                        <p>和女孩打交道的事件占所有事件的比例最少的人</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="single_service wow fadeInUp" data-wow-delay="4s">
+                        <i class="icon-magnifying-glass"></i>
+                        <h2>人气榜</h2>
+                        <p>这是什么鬼....什么人气?还校花校草?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about_us_area" id="ABOUT">
+      <div class="container">
+        <p>&nbsp;</p>
+
+        <div class="row flat">
+
+          <div class="col-lg-4 col-md-4 col-xs-6">
+            <ul class="plan plan1">
+              <li class="plan-name">
+                懵懂期
+              </li>
+              <li class="plan-price">
+                <strong>$29</strong> / month
+              </li>
+              <li>
+                <strong>5GB</strong> Storage
+              </li>
+              <li>
+                <strong>1GB</strong> RAM
+              </li>
+              <li>
+                <strong>400GB</strong> Bandwidth
+              </li>
+              <li>
+                <strong>10</strong> Email Address
+              </li>
+              <li>
+                <strong>Forum</strong> Support
+              </li>
+              <li class="plan-action">
+                <a href="#" class="btn btn-danger btn-lg">Signup</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-xs-6">
+            <ul class="plan plan2 featured">
+              <li class="plan-name">
+                追求期
+              </li>
+              <li class="plan-price">
+                <strong>$39</strong> / month
+              </li>
+              <li>
+                <strong>5GB</strong> Storage
+              </li>
+              <li>
+                <strong>1GB</strong> RAM
+              </li>
+              <li>
+                <strong>400GB</strong> Bandwidth
+              </li>
+              <li>
+                <strong>10</strong> Email Address
+              </li>
+              <li>
+                <strong>Forum</strong> Support
+              </li>
+              <li class="plan-action">
+                <a href="#" class="btn btn-danger btn-lg">Signup</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-xs-6">
+            <ul class="plan plan3">
+              <li class="plan-name">
+                暗恋期
+              </li>
+              <li class="plan-price">
+                <strong>$199</strong> / month
+              </li>
+              <li>
+                <strong>50GB</strong> Storage
+              </li>
+              <li>
+                <strong>8GB</strong> RAM
+              </li>
+              <li>
+                <strong>1024GB</strong> Bandwidth
+              </li>
+              <li>
+                <strong>Unlimited</strong> Email Address
+              </li>
+              <li>
+                <strong>Forum</strong> Support
+              </li>
+              <li class="plan-action">
+                <a href="#" class="btn btn-danger btn-lg">Signup</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+{% endblock %}
