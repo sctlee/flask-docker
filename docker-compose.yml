@@ -1,0 +1,13 @@
+web:
+  build: .
+  ports:
+    - "8990:80"
+  links:
+    - singledog-mysql
+  env_file: mysql.env
+
+singledog-mysql:
+  image: mysql
+  ports:
+    - "3306:3306"
+  env_file: mysql.env
